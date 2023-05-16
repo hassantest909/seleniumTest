@@ -25,6 +25,15 @@ public class GoogleTest {
 		 //driver.findElement(By.id("")).sendKeys(null);
 		
 	}
+	
+	@Test
+	public void test1Function() {
+		
+		 driver = new ChromeDriver();
+		 driver.get("https://www.google.com");
+		 //driver.findElement(By.id("")).sendKeys(null);
+		
+	}
 
 	@AfterClass
 	public void tearDown() {
