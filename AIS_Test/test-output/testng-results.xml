@@ -1,51 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-15T04:12:30 PDT" name="Default suite" finished-at="2023-05-15T04:12:31 PDT" duration-ms="1644">
+  <suite started-at="2023-05-24T16:26:36 PKT" name="Default suite" finished-at="2023-05-24T16:26:41 PKT" duration-ms="4662">
     <groups>
     </groups>
-    <test started-at="2023-05-15T04:12:30 PDT" name="Default test" finished-at="2023-05-15T04:12:31 PDT" duration-ms="1644">
-      <class name="Tests.GoogleTest">
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:Tests.GoogleTest@c8c12ac]" started-at="2023-05-15T04:12:30 PDT" name="tearUp" finished-at="2023-05-15T04:12:30 PDT" duration-ms="9" status="PASS">
+    <test started-at="2023-05-24T16:26:36 PKT" name="Default test" finished-at="2023-05-24T16:26:41 PKT" duration-ms="4662">
+      <class name="Tests.APITest">
+        <test-method signature="test_01()[pri:0, instance:Tests.APITest@6933b6c6]" started-at="2023-05-24T16:26:36 PKT" name="test_01" finished-at="2023-05-24T16:26:38 PKT" duration-ms="1427" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearUp -->
-        <test-method signature="testFunction()[pri:0, instance:Tests.GoogleTest@c8c12ac]" started-at="2023-05-15T04:12:30 PDT" name="testFunction" finished-at="2023-05-15T04:12:31 PDT" duration-ms="1596" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidArgumentException">
+        </test-method> <!-- test_01 -->
+        <test-method signature="test_02()[pri:0, instance:Tests.APITest@6933b6c6]" started-at="2023-05-24T16:26:38 PKT" name="test_02" finished-at="2023-05-24T16:26:39 PKT" duration-ms="955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_02 -->
+        <test-method signature="test_03()[pri:0, instance:Tests.APITest@6933b6c6]" started-at="2023-05-24T16:26:39 PKT" name="test_03" finished-at="2023-05-24T16:26:39 PKT" duration-ms="427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_03 -->
+        <test-method signature="test_04()[pri:0, instance:Tests.APITest@6933b6c6]" started-at="2023-05-24T16:26:39 PKT" name="test_04" finished-at="2023-05-24T16:26:40 PKT" duration-ms="941" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[invalid argument
-  (Session info: chrome=113.0.5672.93)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9a29048563e530fabf257c8621759e9d, get {url=www.google.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55068/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9a29048563e530fabf257c8621759e9d]]>
+              <![CDATA[expected [200] but found [201]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument
-  (Session info: chrome=113.0.5672.93)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9a29048563e530fabf257c8621759e9d, get {url=www.google.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55068/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9a29048563e530fabf257c8621759e9d
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-at Tests.GoogleTest.testFunction(GoogleTest.java:24)
+              <![CDATA[java.lang.AssertionError: expected [200] but found [201]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1418)
+at org.testng.Assert.assertEquals(Assert.java:1382)
+at org.testng.Assert.assertEquals(Assert.java:1428)
+at Tests.APITest.test_04(APITest.java:64)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -76,15 +64,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFunction -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.GoogleTest@c8c12ac]" started-at="2023-05-15T04:12:31 PDT" name="tearDown" finished-at="2023-05-15T04:12:31 PDT" duration-ms="0" status="PASS">
+        </test-method> <!-- test_04 -->
+        <test-method signature="test_05()[pri:0, instance:Tests.APITest@6933b6c6]" started-at="2023-05-24T16:26:40 PKT" name="test_05" finished-at="2023-05-24T16:26:41 PKT" duration-ms="828" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Tests.GoogleTest -->
+        </test-method> <!-- test_05 -->
+      </class> <!-- Tests.APITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
