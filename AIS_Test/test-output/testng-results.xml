@@ -1,39 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-24T16:26:36 PKT" name="Default suite" finished-at="2023-05-24T16:26:41 PKT" duration-ms="4662">
+  <suite started-at="2023-05-25T17:25:25 PKT" name="Default suite" finished-at="2023-05-25T17:25:33 PKT" duration-ms="7924">
     <groups>
     </groups>
-    <test started-at="2023-05-24T16:26:36 PKT" name="Default test" finished-at="2023-05-24T16:26:41 PKT" duration-ms="4662">
-      <class name="Tests.APITest">
-        <test-method signature="test_01()[pri:0, instance:Tests.APITest@6933b6c6]" started-at="2023-05-24T16:26:36 PKT" name="test_01" finished-at="2023-05-24T16:26:38 PKT" duration-ms="1427" status="PASS">
+    <test started-at="2023-05-25T17:25:25 PKT" name="Default test" finished-at="2023-05-25T17:25:33 PKT" duration-ms="7924">
+      <class name="Tests.AuthApiTest">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:Tests.AuthApiTest@565f390]" started-at="2023-05-25T17:25:25 PKT" name="tearUp" finished-at="2023-05-25T17:25:29 PKT" duration-ms="3965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method signature="test_01()[pri:0, instance:Tests.AuthApiTest@565f390]" started-at="2023-05-25T17:25:29 PKT" name="test_01" description="Unlock the Barn" finished-at="2023-05-25T17:25:31 PKT" duration-ms="1670" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_01 -->
-        <test-method signature="test_02()[pri:0, instance:Tests.APITest@6933b6c6]" started-at="2023-05-24T16:26:38 PKT" name="test_02" finished-at="2023-05-24T16:26:39 PKT" duration-ms="955" status="PASS">
+        <test-method signature="test_02()[pri:0, instance:Tests.AuthApiTest@565f390]" started-at="2023-05-25T17:25:31 PKT" name="test_02" description="Verify that toilet seat is down" finished-at="2023-05-25T17:25:31 PKT" duration-ms="626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_02 -->
-        <test-method signature="test_03()[pri:0, instance:Tests.APITest@6933b6c6]" started-at="2023-05-24T16:26:39 PKT" name="test_03" finished-at="2023-05-24T16:26:39 PKT" duration-ms="427" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_03 -->
-        <test-method signature="test_04()[pri:0, instance:Tests.APITest@6933b6c6]" started-at="2023-05-24T16:26:39 PKT" name="test_04" finished-at="2023-05-24T16:26:40 PKT" duration-ms="941" status="FAIL">
+        <test-method signature="test_03()[pri:0, instance:Tests.AuthApiTest@565f390]" started-at="2023-05-25T17:25:31 PKT" name="test_03" description="Verity that the chickens are fead" finished-at="2023-05-25T17:25:33 PKT" duration-ms="1577" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [200] but found [201]]]>
+              <![CDATA[expected [Your chickens are now full and happ] but found [Your chickens are now full and happy]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [201]
+              <![CDATA[java.lang.AssertionError: expected [Your chickens are now full and happ] but found [Your chickens are now full and happy]
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.failNotEquals(Assert.java:1577)
 at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:1418)
-at org.testng.Assert.assertEquals(Assert.java:1382)
-at org.testng.Assert.assertEquals(Assert.java:1428)
-at Tests.APITest.test_04(APITest.java:64)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at Tests.AuthApiTest.test_03(AuthApiTest.java:36)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -67,12 +66,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_04 -->
-        <test-method signature="test_05()[pri:0, instance:Tests.APITest@6933b6c6]" started-at="2023-05-24T16:26:40 PKT" name="test_05" finished-at="2023-05-24T16:26:41 PKT" duration-ms="828" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_05 -->
-      </class> <!-- Tests.APITest -->
+        </test-method> <!-- test_03 -->
+      </class> <!-- Tests.AuthApiTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

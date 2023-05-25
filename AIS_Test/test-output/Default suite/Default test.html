@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 24 16:26:36 PKT 2023</td>
+<td>Started on:</td><td>Thu May 25 17:25:25 PKT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4662 ms)</td>
+<tr><td>Total time:</td><td>7 seconds (7924 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.APITest.test_04()'><b>test_04</b><br>Test class: Tests.APITest</td>
-<td><div><pre>java.lang.AssertionError: expected [200] but found [201]
+<td title='Tests.AuthApiTest.test_03()'><b>test_03</b><br>Test class: Tests.AuthApiTest<br>Test method: Verity that the chickens are fead</td>
+<td><div><pre>java.lang.AssertionError: expected [Your chickens are now full and happ] but found [Your chickens are now full and happy]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1418)
-	at org.testng.Assert.assertEquals(Assert.java:1382)
-	at org.testng.Assert.assertEquals(Assert.java:1428)
-	at Tests.APITest.test_04(APITest.java:64)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at Tests.AuthApiTest.test_03(AuthApiTest.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -114,16 +113,15 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace63746349", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace63746349'><pre>java.lang.AssertionError: expected [200] but found [201]
+</pre></div><a href='#' onClick='toggleBox("stack-trace2106390956", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2106390956'><pre>java.lang.AssertionError: expected [Your chickens are now full and happ] but found [Your chickens are now full and happy]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1418)
-	at org.testng.Assert.assertEquals(Assert.java:1382)
-	at org.testng.Assert.assertEquals(Assert.java:1428)
-	at Tests.APITest.test_04(APITest.java:64)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at Tests.AuthApiTest.test_03(AuthApiTest.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -153,8 +151,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>Tests.APITest@6933b6c6</td></tr>
+<td>1</td>
+<td>Tests.AuthApiTest@565f390</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -165,25 +163,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.APITest.test_03()'><b>test_03</b><br>Test class: Tests.APITest</td>
+<td title='Tests.AuthApiTest.test_02()'><b>test_02</b><br>Test class: Tests.AuthApiTest<br>Test method: Verify that toilet seat is down</td>
 <td></td>
 <td>0</td>
-<td>Tests.APITest@6933b6c6</td></tr>
+<td>Tests.AuthApiTest@565f390</td></tr>
 <tr>
-<td title='Tests.APITest.test_02()'><b>test_02</b><br>Test class: Tests.APITest</td>
-<td></td>
-<td>0</td>
-<td>Tests.APITest@6933b6c6</td></tr>
-<tr>
-<td title='Tests.APITest.test_05()'><b>test_05</b><br>Test class: Tests.APITest</td>
-<td></td>
-<td>0</td>
-<td>Tests.APITest@6933b6c6</td></tr>
-<tr>
-<td title='Tests.APITest.test_01()'><b>test_01</b><br>Test class: Tests.APITest</td>
+<td title='Tests.AuthApiTest.test_01()'><b>test_01</b><br>Test class: Tests.AuthApiTest<br>Test method: Unlock the Barn</td>
 <td></td>
 <td>1</td>
-<td>Tests.APITest@6933b6c6</td></tr>
+<td>Tests.AuthApiTest@565f390</td></tr>
 </table><p>
 </body>
 </html>
