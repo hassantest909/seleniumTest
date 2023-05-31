@@ -10,6 +10,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import com.google.gson.Gson;
 import io.restassured.response.Response;
+import io.restassured.http.Header;
 
 public class APITest extends ApiBaseClass {
 
@@ -57,7 +58,7 @@ public class APITest extends ApiBaseClass {
 			
 		String requestBody;
 		try {
-			requestBody = new String(Files.readAllBytes(Paths.get("C:\\Users\\Lenovo\\git\\repository\\AIS_Test\\src\\main\\resources\\TestData.json")));
+			requestBody = new String(Files.readAllBytes(Paths.get(JsonFiles.TestData)));
 			System.out.println(requestBody);
 			Response response = postRequest(requestBody, ApiUrls.createNewUser);
 			Assert.assertEquals(response.statusCode(), 201);
@@ -74,7 +75,7 @@ public class APITest extends ApiBaseClass {
 			
 		String requestBody;
 		try {
-			requestBody = new String(Files.readAllBytes(Paths.get("C:\\Users\\Lenovo\\git\\repository\\AIS_Test\\src\\main\\resources\\TestData.json")));
+			requestBody = new String(Files.readAllBytes(Paths.get(JsonFiles.TestData)));
             Gson gson = new Gson();
             JSONObject jsonBody = gson.fromJson(requestBody, JSONObject.class);
             jsonBody.put("name", "TestNumber");
@@ -92,7 +93,7 @@ public class APITest extends ApiBaseClass {
 			
 		String requestBody;
 		try {
-			requestBody = new String(Files.readAllBytes(Paths.get("C:\\Users\\Lenovo\\git\\repository\\AIS_Test\\src\\main\\resources\\TestData.json")));
+			requestBody = new String(Files.readAllBytes(Paths.get(JsonFiles.TestData)));
             Gson gson = new Gson();
             JSONObject jsonBody = gson.fromJson(requestBody, JSONObject.class);
             jsonBody.put("name", "TestNumber");
@@ -103,6 +104,30 @@ public class APITest extends ApiBaseClass {
 			e.printStackTrace();	
 		}		
 		
+	}
+	
+	@Test(description = "Passing body and Headers")
+	void test_08() {
+		String requestBody;
+		try {
+			requestBody = new String(Files.readAllBytes(Paths.get(JsonFiles.TestData)));
+            Gson gson = new Gson();
+            JSONObject jsonBody = gson.fromJson(requestBody, JSONObject.class);
+            jsonBody.put("name", "TestNumber");
+            String updateRequestBody = gson.toJson(jsonBody);
+            
+            JSONObject requestHeaders = new JSONObject();
+    		requestHeaders.put("Content-Type","invlalid-type");
+            
+            Response response = ApiBaseClass.postRequestHeaders(requestHeaders, updateRequestBody, ApiUrls.createNewUser);
+            System.out.println(response.getHeaders().toString());
+            System.out.println(response.asString());
+			//System.out.println(updateRequestBody);
+            Assert.assertEquals(response.getStatusCode(), 201);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();	
+		}
 	}
 
 }

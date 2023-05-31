@@ -6,7 +6,8 @@
     </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Tests.GoogleTest"/>
+      <class name="UserManagement.UserManagemantTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+

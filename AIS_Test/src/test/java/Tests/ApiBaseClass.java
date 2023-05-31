@@ -5,8 +5,25 @@ import static io.restassured.RestAssured.given;
 import org.json.simple.JSONObject;
 import org.testng.annotations.BeforeClass;
 
+import com.google.gson.Gson;
+
+import Models.Account;
+import Models.AdditionalInformation;
+import Models.Data;
+import Models.Example;
+import Models.PayLoad;
+import Models.Security;
+import io.restassured.RestAssured;
+import io.restassured.config.LogConfig;
 import io.restassured.http.ContentType;
+import io.restassured.http.Header;
 import io.restassured.response.Response;
+import javax.crypto.Cipher;
+import javax.crypto.spec.SecretKeySpec;
+
+import java.util.ArrayList;
+import java.util.Base64;
+import java.util.List;
 
 public class ApiBaseClass {
 	
@@ -38,7 +55,10 @@ public class ApiBaseClass {
 	
 	public static Response getRequest(String token,
 			String url) {
-       
+		
+//		RestAssured.config = RestAssured.config()
+//                .logConfig(LogConfig.logConfig().enableLoggingOfRequestAndResponseIfValidationFails());
+		
         return given()
         		.header("Authorization","Bearer "+token)
                 .contentType(ContentType.JSON)
@@ -62,7 +82,7 @@ public class ApiBaseClass {
 	
 	public static Response postRequest(String requestBody,
 			String url) {
-        System.out.println(requestBody);
+        //System.out.println(requestBody);
         return given()
                 .contentType(ContentType.JSON)
                 .body(requestBody)
@@ -83,5 +103,73 @@ public class ApiBaseClass {
                 .then()
                 .extract().response();
     }
+	
+	public static Response postRequestHeaders(JSONObject headers,String requestBody,
+			String url) {
+        System.out.println(headers);
+        return given()
+        		.headers(headers)
+                .contentType(ContentType.JSON)
+                .body(requestBody)
+                .when()
+                .post(url)
+                .then()
+                .extract().response();
+    }
+	
+	
+	public String responseBody(String userName,
+			String userPass,
+			String securityToken,
+			String bban,
+			String currency,
+			String iban,
+			String msidn,
+			String pan,
+			String channel,
+			String termainal,
+			String referance,
+			String luserName,
+			String luserPassword) {
+		Example example = new Example();
+		example.setData(new Data());
+
+		example.getData().setSecurity(new Security());
+		example.getData().getSecurity().setUserName("Test");
+		example.getData().getSecurity().setPassword("123456");
+		example.getData().getSecurity().setSecurityToken("");
+
+		example.getData().setAccount(new Account());
+		example.getData().getAccount().setBban("382738237");
+		example.getData().getAccount().setCurrency("PKR");
+		example.getData().getAccount().setIban("PKR8237378272399239");
+		example.getData().getAccount().setMsidn("2314124");
+		example.getData().getAccount().setPan("72329393");
+
+		example.getData().setChannel("channel");
+		example.getData().setTerminal("Termainal");
+		example.getData().setReterivalReferenceNumber("Reference");
+
+		example.getData().setPayLoad(new PayLoad());
+		example.getData().getPayLoad().setUserName("hassan");
+		example.getData().getPayLoad().setUserPassword("123456");
+
+		List<AdditionalInformation> additionalInfoList = new ArrayList<AdditionalInformation>();
+		AdditionalInformation additionalInfo = new AdditionalInformation();
+		additionalInfo.setInfoKey("Infokey");
+		additionalInfo.setInfoValue("InfoValue");
+
+		additionalInfoList.add(additionalInfo);
+
+		example.getData().setAdditionalInformation(additionalInfoList);
+
+		example.getData().setCheckSum("checkSum");
+
+		Gson gson = new Gson();
+		String json = gson.toJson(example);
+		
+		return json;
+	}
+	
 	
 }
