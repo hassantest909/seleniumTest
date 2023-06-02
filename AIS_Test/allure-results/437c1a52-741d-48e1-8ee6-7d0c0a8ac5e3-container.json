@@ -1,1 +1,0 @@
-{"uuid":"437c1a52-741d-48e1-8ee6-7d0c0a8ac5e3","name":"Tests.AuthApiTest","children":["2dca7bc9-08ea-40bf-9544-b4b663cd0919"],"befores":[{"name":"tearUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1685016120120,"stop":1685016122506}],"afters":[],"start":1685016120086,"stop":1685016122624}

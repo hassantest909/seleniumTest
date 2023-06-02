@@ -9,7 +9,6 @@ import Models.Example;
 import Models.PayLoad;
 import Models.Security;
 import Models.AdditionalInformation;
-import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -20,57 +19,57 @@ import java.util.*;
 
 public class AuthApiTest extends ApiBaseClass {
 
-	/*
-	 * @Test(description = "Basic performance senity of unlock the barn API")
-	 * 
-	 * @Epic("Regression Test")
-	 * 
-	 * @Feature("Login Test")
-	 * 
-	 * @Severity(SeverityLevel.CRITICAL) void test_00() {
-	 * 
-	 * Response response =
-	 * postRequest0(authToken,ApiUrls.baseAuthSec+id+ApiUrls.unlockTheBarn);
-	 * Assert.assertEquals(response.statusCode(), 200);
-	 * Assert.assertEquals(response.jsonPath().getString("action"), "barn-unlock");
-	 * Assert.assertEquals(response.jsonPath().getString("success"), "true");
-	 * 
-	 * }
-	 * 
-	 * @Test(description = "Unlock the Barn") void test_01() {
-	 * 
-	 * Response response =
-	 * postRequest0(authToken,ApiUrls.baseAuthSec+id+ApiUrls.unlockTheBarn);
-	 * Assert.assertEquals(response.statusCode(), 200);
-	 * Assert.assertEquals(response.jsonPath().getString("action"), "barn-unlock");
-	 * Assert.assertEquals(response.jsonPath().getString("success"), "true");
-	 * 
-	 * }
-	 * 
-	 * @Test(description = "Verify that toilet seat is down") void test_02() {
-	 * 
-	 * Response response =
-	 * postRequest0(authToken,ApiUrls.baseAuthSec+id+ApiUrls.putToiletSeatDown);
-	 * Assert.assertEquals(response.statusCode(), 200);
-	 * Assert.assertEquals(response.jsonPath().getString("action"),
-	 * "toiletseat-down");
-	 * Assert.assertEquals(response.jsonPath().getString("success"), "true");
-	 * 
-	 * }
-	 * 
-	 * @Test(description = "Verity that the chickens are fad") void test_03() {
-	 * 
-	 * Response response =
-	 * postRequest0(authToken,ApiUrls.baseAuthSec+id+ApiUrls.feedYourChickes);
-	 * Assert.assertEquals(response.statusCode(), 200);
-	 * Assert.assertEquals(response.jsonPath().getString("message"),
-	 * "Your chickens are now full and happy");
-	 * Assert.assertEquals(response.jsonPath().getString("success"), "tru");
-	 * 
-	 * }
-	 */
+	@Test(description = "Basic performance senity of unlock the barn API")
+	@Feature("Smoke")
+	@Severity(SeverityLevel.CRITICAL)
+	void test_00() {
 
-	@Test(description = "json obect")
+		Response response = postRequest0(authToken, ApiUrls.baseAuthSec + id + ApiUrls.unlockTheBarn);
+		Assert.assertEquals(response.statusCode(), 200);
+		Assert.assertEquals(response.jsonPath().getString("action"), "barn-unlock");
+		Assert.assertEquals(response.jsonPath().getString("success"), "true");
+
+	}
+
+	@Feature("Smoke")
+	@Severity(SeverityLevel.CRITICAL)
+	@Test(description = "Unlock the Barn")
+	void test_01() {
+
+		Response response = postRequest0(authToken, ApiUrls.baseAuthSec + id + ApiUrls.unlockTheBarn);
+		Assert.assertEquals(response.statusCode(), 200);
+		Assert.assertEquals(response.jsonPath().getString("action"), "barn-unlock");
+		Assert.assertEquals(response.jsonPath().getString("success"), "true");
+
+	}
+
+	@Feature("Smoke")
+	@Severity(SeverityLevel.CRITICAL)
+	@Test(description = "Verify that toilet seat is down")
+	void test_02() {
+
+		Response response = postRequest0(authToken, ApiUrls.baseAuthSec + id + ApiUrls.putToiletSeatDown);
+		Assert.assertEquals(response.statusCode(), 200);
+		Assert.assertEquals(response.jsonPath().getString("action"), "toiletseat-down");
+		Assert.assertEquals(response.jsonPath().getString("success"), "true");
+
+	}
+
+	@Feature("Smoke")
+	@Severity(SeverityLevel.CRITICAL)
+	@Test(description = "Verity that the chickens are fad")
+	void test_03() {
+
+		Response response = postRequest0(authToken, ApiUrls.baseAuthSec + id + ApiUrls.feedYourChickes);
+		Assert.assertEquals(response.statusCode(), 200);
+		Assert.assertEquals(response.jsonPath().getString("message"), "Your chickens are now full and happy");
+		Assert.assertEquals(response.jsonPath().getString("success"), "tru");
+
+	}
+
+	@Feature("Smoke")
+	@Severity(SeverityLevel.CRITICAL)
+	@Test(description = "Create nested json using model classes")
 	void test_04() {
 
 		Example example = new Example();

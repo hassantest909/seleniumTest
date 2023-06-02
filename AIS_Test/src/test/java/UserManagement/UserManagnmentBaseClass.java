@@ -2,8 +2,6 @@ package UserManagement;
 
 import static io.restassured.RestAssured.given;
 
-import org.testng.annotations.BeforeTest;
-
 import com.google.gson.Gson;
 
 import Models.Data;
@@ -15,9 +13,6 @@ import io.restassured.response.Response;
 
 public class UserManagnmentBaseClass {
 	
-	
-	
-	
 	public Response beforeTest() {
 		
 		Example example = new Example();
@@ -25,21 +20,33 @@ public class UserManagnmentBaseClass {
 		example.getData().setPayLoad(new PayLoad());
 		example.getData().getPayLoad().setUserName("Kashi");
 		example.getData().getPayLoad().setUserPassword("kashi@123");
-		Gson gson = new Gson();
-		String json = gson.toJson(example);
+		String json = gsonString(example);
+		System.out.println(json);
 		Response response = loginGetAuthToken(ApiUrls.login, json);		
 		return response; 
 		
 	}
 	
+	public String gsonString(Object obj) {
+		Gson gson = new Gson();
+		String json = gson.toJson(obj);
+		return json;
+	}
 	
 	public static Response loginGetAuthToken(String Url,String Body) {
-		return given()
-				.contentType(ContentType.JSON)
-				.body(Body)
-				.when()
-				.post(Url)
-				.then()
-				.extract().response();
+		try {
+			return given()
+					.contentType(ContentType.JSON)
+					.body(Body)
+					.when()
+					.post(Url)
+					.then()
+					.extract().response();
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e.toString());
+			return null;
+		}
+		
 	}	
 }
