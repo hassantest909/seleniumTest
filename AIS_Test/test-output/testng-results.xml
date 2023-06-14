@@ -1,122 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="19" passed="16" failed="3" skipped="0">
+<testng-results ignored="1" total="25" passed="20" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-06T11:47:32 PKT" name="API and UI testing" finished-at="2023-06-06T11:47:56 PKT" duration-ms="24785">
+  <suite started-at="2023-06-14T14:22:40 PKT" name="FrameWork" finished-at="2023-06-14T14:23:21 PKT" duration-ms="40791">
     <groups>
+      <group name="Usecase_Managmnet">
+        <method signature="UseCaseManagmentTest.createUsecase()[pri:0, instance:com.restassured.usermanagment.api.testcases.UseCaseManagmentTest@79defdc]" name="createUsecase" class="com.restassured.usermanagment.api.testcases.UseCaseManagmentTest"/>
+        <method signature="UseCaseManagmentTest.getAllUseCases()[pri:0, instance:com.restassured.usermanagment.api.testcases.UseCaseManagmentTest@79defdc]" name="getAllUseCases" class="com.restassured.usermanagment.api.testcases.UseCaseManagmentTest"/>
+        <method signature="UseCaseManagmentTest.updateUseCase()[pri:0, instance:com.restassured.usermanagment.api.testcases.UseCaseManagmentTest@79defdc]" name="updateUseCase" class="com.restassured.usermanagment.api.testcases.UseCaseManagmentTest"/>
+      </group> <!-- Usecase_Managmnet -->
       <group name="Login">
-        <method signature="UserManagemantTest.Test01()[pri:0, instance:api.userManagement.UserManagemantTest@7de62196]" name="Test01" class="api.userManagement.UserManagemantTest"/>
-        <method signature="UserManagemantTest.Test02()[pri:0, instance:api.userManagement.UserManagemantTest@7de62196]" name="Test02" class="api.userManagement.UserManagemantTest"/>
-        <method signature="UserManagemantTest.Test03()[pri:0, instance:api.userManagement.UserManagemantTest@7de62196]" name="Test03" class="api.userManagement.UserManagemantTest"/>
+        <method signature="UserManagemantTest.Test01()[pri:0, instance:com.restassured.usermanagment.api.testcases.UserManagemantTest@a8ef162]" name="Test01" class="com.restassured.usermanagment.api.testcases.UserManagemantTest"/>
+        <method signature="UserManagemantTest.Test02()[pri:0, instance:com.restassured.usermanagment.api.testcases.UserManagemantTest@a8ef162]" name="Test02" class="com.restassured.usermanagment.api.testcases.UserManagemantTest"/>
+        <method signature="UserManagemantTest.Test03()[pri:0, instance:com.restassured.usermanagment.api.testcases.UserManagemantTest@a8ef162]" name="Test03" class="com.restassured.usermanagment.api.testcases.UserManagemantTest"/>
       </group> <!-- Login -->
     </groups>
-    <test started-at="2023-06-06T11:47:32 PKT" name="Demo API Tests" finished-at="2023-06-06T11:47:45 PKT" duration-ms="13505">
-      <class name="api.demo.APITest">
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:api.demo.APITest@7975d1d8]" started-at="2023-06-06T11:47:39 PKT" name="tearUp" finished-at="2023-06-06T11:47:40 PKT" duration-ms="1062" status="PASS">
+    <test started-at="2023-06-14T14:22:40 PKT" name="Test" finished-at="2023-06-14T14:23:21 PKT" duration-ms="40791">
+      <class name="com.restassured.google.ui.testcases.GoogleTest">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.restassured.google.ui.testcases.GoogleTest@4b86805d]" started-at="2023-06-14T14:23:07 PKT" name="tearUp" finished-at="2023-06-14T14:23:07 PKT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-        <test-method signature="test_01()[pri:0, instance:api.demo.APITest@7975d1d8]" started-at="2023-06-06T11:47:40 PKT" name="test_01" description="Response code should be 200" finished-at="2023-06-06T11:47:41 PKT" duration-ms="1147" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_01 -->
-        <test-method signature="test_02()[pri:0, instance:api.demo.APITest@7975d1d8]" started-at="2023-06-06T11:47:41 PKT" name="test_02" description="Velidate First name and last name" finished-at="2023-06-06T11:47:41 PKT" duration-ms="700" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_02 -->
-        <test-method signature="test_03()[pri:0, instance:api.demo.APITest@7975d1d8]" started-at="2023-06-06T11:47:41 PKT" name="test_03" description="log all json on log" finished-at="2023-06-06T11:47:42 PKT" duration-ms="519" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_03 -->
-        <test-method signature="test_04()[pri:0, instance:api.demo.APITest@7975d1d8]" started-at="2023-06-06T11:47:42 PKT" name="test_04" description="Providing incorrect headers" finished-at="2023-06-06T11:47:43 PKT" duration-ms="1301" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_04 -->
-        <test-method signature="test_05()[pri:0, instance:api.demo.APITest@7975d1d8]" started-at="2023-06-06T11:47:43 PKT" name="test_05" description="Get body form json file and verify" finished-at="2023-06-06T11:47:44 PKT" duration-ms="819" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_05 -->
-        <test-method signature="test_06()[pri:0, instance:api.demo.APITest@7975d1d8]" started-at="2023-06-06T11:47:44 PKT" name="test_06" description="Get and edit json file on run time" finished-at="2023-06-06T11:47:44 PKT" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_06 -->
-        <test-method signature="test_07()[pri:0, instance:api.demo.APITest@7975d1d8]" started-at="2023-06-06T11:47:44 PKT" name="test_07" description="passing headers" finished-at="2023-06-06T11:47:44 PKT" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_07 -->
-        <test-method signature="test_08()[pri:0, instance:api.demo.APITest@7975d1d8]" started-at="2023-06-06T11:47:44 PKT" name="test_08" description="Passing body and Headers" finished-at="2023-06-06T11:47:45 PKT" duration-ms="900" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_08 -->
-      </class> <!-- api.demo.APITest -->
-      <class name="api.demo.AuthApiTest">
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:api.demo.AuthApiTest@5c86dbc5]" started-at="2023-06-06T11:47:32 PKT" name="tearUp" finished-at="2023-06-06T11:47:35 PKT" duration-ms="3564" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearUp -->
-        <test-method signature="test_00()[pri:0, instance:api.demo.AuthApiTest@5c86dbc5]" started-at="2023-06-06T11:47:35 PKT" name="test_00" description="Basic performance senity of unlock the barn API" finished-at="2023-06-06T11:47:36 PKT" duration-ms="920" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_00 -->
-        <test-method signature="test_01()[pri:0, instance:api.demo.AuthApiTest@5c86dbc5]" started-at="2023-06-06T11:47:36 PKT" name="test_01" description="Unlock the Barn" finished-at="2023-06-06T11:47:37 PKT" duration-ms="965" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_01 -->
-        <test-method signature="test_02()[pri:0, instance:api.demo.AuthApiTest@5c86dbc5]" started-at="2023-06-06T11:47:37 PKT" name="test_02" description="Verify that toilet seat is down" finished-at="2023-06-06T11:47:38 PKT" duration-ms="825" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_02 -->
-        <test-method signature="test_03()[pri:0, instance:api.demo.AuthApiTest@5c86dbc5]" started-at="2023-06-06T11:47:38 PKT" name="test_03" description="Verity that the chickens are fad" finished-at="2023-06-06T11:47:39 PKT" duration-ms="599" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_03 -->
-        <test-method signature="test_04()[pri:0, instance:api.demo.AuthApiTest@5c86dbc5]" started-at="2023-06-06T11:47:39 PKT" name="test_04" description="Create nested json using model classes" finished-at="2023-06-06T11:47:39 PKT" duration-ms="46" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_04 -->
-      </class> <!-- api.demo.AuthApiTest -->
-    </test> <!-- Demo API Tests -->
-    <test started-at="2023-06-06T11:47:45 PKT" name="UI Test" finished-at="2023-06-06T11:47:54 PKT" duration-ms="9363">
-      <class name="ui.google.test.GoogleTest">
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:ui.google.test.GoogleTest@1169afe1]" started-at="2023-06-06T11:47:45 PKT" name="tearUp" finished-at="2023-06-06T11:47:45 PKT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearUp -->
-        <test-method signature="test0Function()[pri:0, instance:ui.google.test.GoogleTest@1169afe1]" started-at="2023-06-06T11:47:45 PKT" name="test0Function" description="Go to Google search page" finished-at="2023-06-06T11:47:49 PKT" duration-ms="3594" status="PASS">
+        <test-method signature="test0Function()[pri:0, instance:com.restassured.google.ui.testcases.GoogleTest@4b86805d]" started-at="2023-06-14T14:23:07 PKT" name="test0Function" description="Go to Google search page" finished-at="2023-06-14T14:23:14 PKT" duration-ms="6814" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test0Function -->
-        <test-method signature="test1Function()[pri:0, instance:ui.google.test.GoogleTest@1169afe1]" started-at="2023-06-06T11:47:49 PKT" name="test1Function" description="Go to Google search page and find Element" finished-at="2023-06-06T11:47:51 PKT" duration-ms="2796" status="PASS">
+        <test-method signature="test1Function()[pri:0, instance:com.restassured.google.ui.testcases.GoogleTest@4b86805d]" started-at="2023-06-14T14:23:14 PKT" name="test1Function" description="Go to Google search page and find Element" finished-at="2023-06-14T14:23:17 PKT" duration-ms="3114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1Function -->
-        <test-method signature="testFunction()[pri:0, instance:ui.google.test.GoogleTest@1169afe1]" started-at="2023-06-06T11:47:51 PKT" name="testFunction" description="Initiate Chrome Browser" finished-at="2023-06-06T11:47:54 PKT" duration-ms="2953" status="PASS">
+        <test-method signature="testFunction()[pri:0, instance:com.restassured.google.ui.testcases.GoogleTest@4b86805d]" started-at="2023-06-14T14:23:17 PKT" name="testFunction" description="Initiate Chrome Browser" finished-at="2023-06-14T14:23:21 PKT" duration-ms="3553" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFunction -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui.google.test.GoogleTest@1169afe1]" started-at="2023-06-06T11:47:54 PKT" name="tearDown" finished-at="2023-06-06T11:47:54 PKT" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.restassured.google.ui.testcases.GoogleTest@4b86805d]" started-at="2023-06-14T14:23:21 PKT" name="tearDown" finished-at="2023-06-14T14:23:21 PKT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- ui.google.test.GoogleTest -->
-    </test> <!-- UI Test -->
-    <test started-at="2023-06-06T11:47:54 PKT" name="UserManagement API Testcases" finished-at="2023-06-06T11:47:56 PKT" duration-ms="1862">
-      <class name="api.userManagement.UserManagemantTest">
-        <test-method signature="Test01()[pri:0, instance:api.userManagement.UserManagemantTest@7de62196]" started-at="2023-06-06T11:47:54 PKT" name="Test01" description="Verify login and get Authorizaion Token" finished-at="2023-06-06T11:47:55 PKT" duration-ms="526" status="FAIL">
-          <exception class="java.lang.AssertionError">
+      </class> <!-- com.restassured.google.ui.testcases.GoogleTest -->
+      <class name="com.restassured.demo.api.testcases.AuthApiTest">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.restassured.demo.api.testcases.AuthApiTest@18317edc]" started-at="2023-06-14T14:22:46 PKT" name="tearUp" finished-at="2023-06-14T14:22:48 PKT" duration-ms="1339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method signature="test_00()[pri:0, instance:com.restassured.demo.api.testcases.AuthApiTest@18317edc]" started-at="2023-06-14T14:22:48 PKT" name="test_00" description="Basic performance senity of unlock the barn API" finished-at="2023-06-14T14:22:48 PKT" duration-ms="604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_00 -->
+        <test-method signature="test_01()[pri:0, instance:com.restassured.demo.api.testcases.AuthApiTest@18317edc]" started-at="2023-06-14T14:22:48 PKT" name="test_01" description="Unlock the Barn" finished-at="2023-06-14T14:22:49 PKT" duration-ms="617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_01 -->
+        <test-method signature="test_02()[pri:0, instance:com.restassured.demo.api.testcases.AuthApiTest@18317edc]" started-at="2023-06-14T14:22:49 PKT" name="test_02" description="Verify that toilet seat is down" finished-at="2023-06-14T14:22:50 PKT" duration-ms="1321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_02 -->
+        <test-method signature="test_03()[pri:0, instance:com.restassured.demo.api.testcases.AuthApiTest@18317edc]" started-at="2023-06-14T14:22:50 PKT" name="test_03" description="Verity that the chickens are fad" finished-at="2023-06-14T14:22:51 PKT" duration-ms="629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_03 -->
+        <test-method signature="test_04()[pri:0, instance:com.restassured.demo.api.testcases.AuthApiTest@18317edc]" started-at="2023-06-14T14:22:51 PKT" name="test_04" description="Create nested json using model classes" finished-at="2023-06-14T14:22:51 PKT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_04 -->
+      </class> <!-- com.restassured.demo.api.testcases.AuthApiTest -->
+      <class name="com.restassured.demo.api.testcases.APITest">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.restassured.demo.api.testcases.APITest@4e0ae11f]" started-at="2023-06-14T14:22:51 PKT" name="tearUp" finished-at="2023-06-14T14:22:52 PKT" duration-ms="1209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method signature="test_01()[pri:0, instance:com.restassured.demo.api.testcases.APITest@4e0ae11f]" started-at="2023-06-14T14:22:52 PKT" name="test_01" description="Response code should be 200" finished-at="2023-06-14T14:22:53 PKT" duration-ms="649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_01 -->
+        <test-method signature="test_02()[pri:0, instance:com.restassured.demo.api.testcases.APITest@4e0ae11f]" started-at="2023-06-14T14:22:53 PKT" name="test_02" description="Velidate First name and last name" finished-at="2023-06-14T14:22:53 PKT" duration-ms="488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_02 -->
+        <test-method signature="test_03()[pri:0, instance:com.restassured.demo.api.testcases.APITest@4e0ae11f]" started-at="2023-06-14T14:22:53 PKT" name="test_03" description="log all json on log" finished-at="2023-06-14T14:22:54 PKT" duration-ms="402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_03 -->
+        <test-method signature="test_04()[pri:0, instance:com.restassured.demo.api.testcases.APITest@4e0ae11f]" started-at="2023-06-14T14:22:54 PKT" name="test_04" description="Providing incorrect headers" finished-at="2023-06-14T14:22:54 PKT" duration-ms="809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_04 -->
+        <test-method signature="test_05()[pri:0, instance:com.restassured.demo.api.testcases.APITest@4e0ae11f]" started-at="2023-06-14T14:22:54 PKT" name="test_05" description="Get body form json file and verify" finished-at="2023-06-14T14:22:55 PKT" duration-ms="755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_05 -->
+        <test-method signature="test_06()[pri:0, instance:com.restassured.demo.api.testcases.APITest@4e0ae11f]" started-at="2023-06-14T14:22:55 PKT" name="test_06" description="Get and edit json file on run time" finished-at="2023-06-14T14:22:55 PKT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_06 -->
+        <test-method signature="test_07()[pri:0, instance:com.restassured.demo.api.testcases.APITest@4e0ae11f]" started-at="2023-06-14T14:22:55 PKT" name="test_07" description="passing headers" finished-at="2023-06-14T14:22:55 PKT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_07 -->
+        <test-method signature="test_08()[pri:0, instance:com.restassured.demo.api.testcases.APITest@4e0ae11f]" started-at="2023-06-14T14:22:55 PKT" name="test_08" description="Passing body and Headers" finished-at="2023-06-14T14:22:56 PKT" duration-ms="770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_08 -->
+      </class> <!-- com.restassured.demo.api.testcases.APITest -->
+      <class name="com.restassured.usermanagment.api.testcases.UserManagemantTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.restassured.usermanagment.api.testcases.UserManagemantTest@a8ef162]" started-at="2023-06-14T14:22:40 PKT" name="beforeTest" finished-at="2023-06-14T14:22:40 PKT" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="Test01()[pri:0, instance:com.restassured.usermanagment.api.testcases.UserManagemantTest@a8ef162]" started-at="2023-06-14T14:22:40 PKT" name="Test01" description="Verify login and get Authorizaion Token" finished-at="2023-06-14T14:22:40 PKT" duration-ms="50" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[expected [200] but found [404]]]>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.asString()" because "response" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [404]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:1418)
-at org.testng.Assert.assertEquals(Assert.java:1382)
-at org.testng.Assert.assertEquals(Assert.java:1428)
-at api.userManagement.UserManagemantTest.Test01(UserManagemantTest.java:35)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.asString()" because "response" is null
+at com.restassured.usermanagment.api.testcases.UserManagemantTest.Test01(UserManagemantTest.java:34)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -147,25 +145,18 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test01 -->
-        <test-method signature="Test02()[pri:0, instance:api.userManagement.UserManagemantTest@7de62196]" started-at="2023-06-06T11:47:55 PKT" name="Test02" description="Verify that Login API returns unique api token every time" finished-at="2023-06-06T11:47:56 PKT" duration-ms="582" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="Test02()[pri:0, instance:com.restassured.usermanagment.api.testcases.UserManagemantTest@a8ef162]" started-at="2023-06-14T14:22:40 PKT" name="Test02" description="Verify that Login API returns unique api token every time" finished-at="2023-06-14T14:22:40 PKT" duration-ms="4" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[expected [200] but found [404]]]>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.getStatusCode()" because "response" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [404]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:1418)
-at org.testng.Assert.assertEquals(Assert.java:1382)
-at org.testng.Assert.assertEquals(Assert.java:1428)
-at api.userManagement.UserManagemantTest.Test02(UserManagemantTest.java:52)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getStatusCode()" because "response" is null
+at com.restassured.usermanagment.api.testcases.UserManagemantTest.Test02(UserManagemantTest.java:52)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -196,11 +187,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test02 -->
-        <test-method signature="Test03()[pri:0, instance:api.userManagement.UserManagemantTest@7de62196]" started-at="2023-06-06T11:47:56 PKT" name="Test03" description="Verify that user should not be able to login with invalid credentials" finished-at="2023-06-06T11:47:56 PKT" duration-ms="725" status="FAIL">
+        <test-method signature="Test03()[pri:0, instance:com.restassured.usermanagment.api.testcases.UserManagemantTest@a8ef162]" started-at="2023-06-14T14:22:40 PKT" name="Test03" description="Verify that user should not be able to login with invalid credentials" finished-at="2023-06-14T14:22:42 PKT" duration-ms="1341" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [401] but found [404]]]>
@@ -214,7 +205,7 @@ at org.testng.Assert.assertEquals(Assert.java:131)
 at org.testng.Assert.assertEquals(Assert.java:1418)
 at org.testng.Assert.assertEquals(Assert.java:1382)
 at org.testng.Assert.assertEquals(Assert.java:1428)
-at api.userManagement.UserManagemantTest.Test03(UserManagemantTest.java:74)
+at com.restassured.usermanagment.api.testcases.UserManagemantTest.Test03(UserManagemantTest.java:74)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -249,7 +240,108 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test03 -->
-      </class> <!-- api.userManagement.UserManagemantTest -->
-    </test> <!-- UserManagement API Testcases -->
-  </suite> <!-- API and UI testing -->
+        <test-method signature="Test04()[pri:0, instance:com.restassured.usermanagment.api.testcases.UserManagemantTest@a8ef162]" started-at="2023-06-14T14:22:42 PKT" name="Test04" finished-at="2023-06-14T14:22:42 PKT" duration-ms="671" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <404>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <404>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at com.restassured.login.authentication.Login.login(Login.java:47)
+at com.restassured.usermanagment.api.testcases.UserManagemantTest.Test04(UserManagemantTest.java:81)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test04 -->
+      </class> <!-- com.restassured.usermanagment.api.testcases.UserManagemantTest -->
+      <class name="com.restassured.zindgi.testcases.Z2ZTransfer">
+        <test-method signature="Z2ZTransaction()[pri:0, instance:com.restassured.zindgi.testcases.Z2ZTransfer@238d68ff]" started-at="2023-06-14T14:22:56 PKT" name="Z2ZTransaction" finished-at="2023-06-14T14:23:07 PKT" duration-ms="11189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Z2ZTransaction -->
+      </class> <!-- com.restassured.zindgi.testcases.Z2ZTransfer -->
+      <class name="com.restassured.usermanagment.api.testcases.UseCaseManagmentTest">
+        <test-method signature="createUsecase()[pri:0, instance:com.restassured.usermanagment.api.testcases.UseCaseManagmentTest@79defdc]" started-at="2023-06-14T14:22:42 PKT" name="createUsecase" description="Create Usecase and verify newly created usecase" finished-at="2023-06-14T14:22:44 PKT" duration-ms="2015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUsecase -->
+        <test-method signature="getAllUseCases()[pri:0, instance:com.restassured.usermanagment.api.testcases.UseCaseManagmentTest@79defdc]" started-at="2023-06-14T14:22:44 PKT" name="getAllUseCases" description="Get All Usecases" finished-at="2023-06-14T14:22:45 PKT" duration-ms="584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUseCases -->
+        <test-method signature="updateUseCase()[pri:0, instance:com.restassured.usermanagment.api.testcases.UseCaseManagmentTest@79defdc]" started-at="2023-06-14T14:22:45 PKT" name="updateUseCase" description="Update Usecase and verify Updated usecase" finished-at="2023-06-14T14:22:46 PKT" duration-ms="1402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUseCase -->
+      </class> <!-- com.restassured.usermanagment.api.testcases.UseCaseManagmentTest -->
+    </test> <!-- Test -->
+  </suite> <!-- FrameWork -->
 </testng-results>

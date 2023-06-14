@@ -3,13 +3,15 @@
 <suite name="Failed suite [API and UI testing]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="UserManagement API Testcases(failed)">
     <classes>
-      <class name="api.userManagement.UserManagemantTest">
+      <class name="com.restassured.usermanagment.api.testcases.UserManagemantTest">
         <methods>
-          <include name="Test03"/>
+          <include name="beforeTest"/>
           <include name="Test01"/>
+          <include name="Test04"/>
           <include name="Test02"/>
+          <include name="Test03"/>
         </methods>
-      </class> <!-- api.userManagement.UserManagemantTest -->
+      </class> <!-- com.restassured.usermanagment.api.testcases.UserManagemantTest -->
     </classes>
   </test> <!-- UserManagement API Testcases(failed) -->
 </suite> <!-- Failed suite [API and UI testing] -->
