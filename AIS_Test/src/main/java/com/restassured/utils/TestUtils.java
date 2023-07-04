@@ -4,7 +4,11 @@ import java.nio.charset.Charset;
 import java.security.KeyFactory;
 import java.security.PublicKey;
 import java.security.spec.X509EncodedKeySpec;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Base64;
+import java.util.Date;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
@@ -93,10 +97,28 @@ public class TestUtils {
         }
     }
     
+    public static String getDateTime(String formate){
+        DateFormat dateFormat = new SimpleDateFormat(formate);
+        Date date = new Date();
+        return dateFormat.format(date);
+    }
+    
     public static String gsonString(Object obj) {
 		Gson gson = new Gson();
 		String json = gson.toJson(obj);
 		return json;
 	}
+    
+    public static boolean isDateFormatValid(String date) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
+        dateFormat.setLenient(false); // Set lenient mode to strict parsing
+
+        try {
+            dateFormat.parse(date);
+            return true; // Date format is valid
+        } catch (ParseException e) {
+            return false; // Date format is not valid
+        }
+    }
 	
 }

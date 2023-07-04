@@ -24,13 +24,11 @@ public class DBQueryExecutor {
 					get_keys.getKeyValue("DB_USER_NAME"),get_keys.getKeyValue("DB_PASSWORD"));
 		} catch (Exception e) {
 			// TODO: handle exception
-			System.out.println(e.toString());
-			
+			System.out.println(e.toString());		
 		}			
 	}
 	
 	public JSONArray dataBase() {
-
         jsonArray = new JSONArray();
 		try {
 			stmt = conn.createStatement();
@@ -79,6 +77,9 @@ public class DBQueryExecutor {
 				}
 				jsonArray.add(database_objects);
 			}
+			results_sets.close();
+			stmt.close();
+			conn.close();
 			System.out.println(jsonArray.toString());
 			return jsonArray;
 		} catch (SQLException e) {
@@ -106,6 +107,9 @@ public class DBQueryExecutor {
 				jsonArray.add(database_objects);
 			}
 			System.out.println(jsonArray.toString());
+			results_sets.close();
+			stmt.close();
+			conn.close();
 			return jsonArray;
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

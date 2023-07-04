@@ -10,9 +10,8 @@
     <classes>
       <class name="com.restassured.usermanagment.api.testcases.UseCaseManagmentTest">
         <methods>
-          <include name="getAllUseCases"/>
-          <include name="updateUseCase"/>
           <include name="createUsecase"/>
+          <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.restassured.usermanagment.api.testcases.UseCaseManagmentTest -->
     </classes>

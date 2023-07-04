@@ -10,6 +10,7 @@
     <classes>
       <class name="com.restassured.usermanagment.api.testcases.UserManagemantTest"/>
       <class name="com.restassured.usermanagment.api.testcases.UseCaseManagmentTest"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- FrameWork -->

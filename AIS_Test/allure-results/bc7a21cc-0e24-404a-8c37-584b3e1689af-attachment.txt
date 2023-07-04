@@ -1,0 +1,24 @@
+{
+    "responseCode": "0000",
+    "message": "Success",
+    "channel": null,
+    "terminal": null,
+    "transactionDate": null,
+    "reterivalReferenceNumber": null,
+    "payLoad": {
+        "mcConfigId": 146,
+        "configDescription": null,
+        "configName": null,
+        "createdate": "2023-06-21T09:04:04.054+00:00",
+        "createuser": 18,
+        "formName": "TRANS_LIMIT",
+        "isActive": "Y",
+        "lastupdatedate": null,
+        "lastupdateuser": null,
+        "requestType": "",
+        "tableName": "TBL_TRANS_LIMIT",
+        "updateindex": null
+    },
+    "errors": null,
+    "checkSum": null
+}

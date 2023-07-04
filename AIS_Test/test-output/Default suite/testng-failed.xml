@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.restassured.usermanagment.api.testcases.UseCaseManagmentTest">
+      <class name="com.restassured.accounttypres.api.AccountTypesTestClass">
         <methods>
-          <include name="beforeTest"/>
-          <include name="dbConnection"/>
+          <include name="create_and_update_account_type"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.restassured.usermanagment.api.testcases.UseCaseManagmentTest -->
+      </class> <!-- com.restassured.accounttypres.api.AccountTypesTestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
