@@ -23,6 +23,7 @@ public class ApiUrls {
 	public static final String LKP_GET_ACCOUNT_TYPES ="/configuration/v1/lookups/getaccounttypes/LKP_ACCOUNT_LEVEL:*";
 	public static final String INACTIVE_ACCOUNT_TYPE ="/account/v1/accountype/inactiveaccounttype";
 	public static final String GET_KYC_SET = "/configuration/v1/lookups/getkycsets/TBL_KYC_SET_HEAD:*";
+	public static final String GET_CLIENT_ROLES ="/configuration/v1/lookups/getclientroles/LKP_ACCOUNT_CLASSIFICATION:*";
 	
 	/*
 	 * ---------------------------- Zindagi API's-------------------------------

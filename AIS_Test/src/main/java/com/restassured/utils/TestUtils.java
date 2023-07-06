@@ -7,6 +7,7 @@ import java.security.spec.X509EncodedKeySpec;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Base64;
 import java.util.Date;
 
@@ -121,4 +122,10 @@ public class TestUtils {
         }
     }
 	
+    public static boolean isWithinRange(String tDate,String sDate,String eDate) {
+    		LocalDate startDate = LocalDate.parse(sDate);
+    		LocalDate endDate = LocalDate.parse(eDate);
+    		LocalDate testDate = LocalDate.parse(eDate);
+    	   return !(testDate.isBefore(startDate) || testDate.isAfter(endDate));
+    	}
 }

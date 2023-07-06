@@ -5,8 +5,8 @@
     <classes>
       <class name="com.restassured.accounttypres.api.AccountTypesTestClass">
         <methods>
-          <include name="create_and_update_account_type"/>
           <include name="beforeMethod"/>
+          <include name="negative_getall_account_types"/>
         </methods>
       </class> <!-- com.restassured.accounttypres.api.AccountTypesTestClass -->
     </classes>

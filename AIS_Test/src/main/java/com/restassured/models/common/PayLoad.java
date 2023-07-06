@@ -8,8 +8,7 @@ public class PayLoad {
 	private String formName;
 	private String requestType;
 	private String isActive;
-	private String mcConfigId;
-	
+	private String mcConfigId;	
 	private String lkpAccountClassificationId;
 	private String accountLevelName;
 	private String kycSetHeadId;
@@ -25,6 +24,50 @@ public class PayLoad {
 	private String monthlyAmtLimitCr;
 	private String yearlyTransLimitCr;
 	private String accountLevelId;
+	private String accountClassificationId;
+	
+	public String getAccountClassificationId() {
+		return accountClassificationId;
+	}
+	public void setAccountClassificationId(String accountClassificationId) {
+		this.accountClassificationId = accountClassificationId;
+	}
+	public String getDateFrom() {
+		return dateFrom;
+	}
+	public void setDateFrom(String dateFrom) {
+		this.dateFrom = dateFrom;
+	}
+	public String getDateTo() {
+		return dateTo;
+	}
+	public void setDateTo(String dateTo) {
+		this.dateTo = dateTo;
+	}
+	public String getCreatedBy() {
+		return createdBy;
+	}
+	public void setCreatedBy(String createdBy) {
+		this.createdBy = createdBy;
+	}
+	public String getUpdatedBy() {
+		return updatedBy;
+	}
+	public void setUpdatedBy(String updatedBy) {
+		this.updatedBy = updatedBy;
+	}
+	public String getStatusId() {
+		return statusId;
+	}
+	public void setStatusId(String statusId) {
+		this.statusId = statusId;
+	}
+	private String dateFrom;
+	private String dateTo;
+	private String createdBy;
+	private String updatedBy;
+	private String statusId;
+	
 	
 	public String getAccountLevelId() {
 		return accountLevelId;
